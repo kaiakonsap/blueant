@@ -1,0 +1,147 @@
+* {
+  margin:0;
+  padding: 0;
+}
+body,
+a:link,
+a:visited {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3163a2
+}
+a:link {
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -o-transition: color .2ss ease;
+}
+header {
+  padding-top: 20px;
+}
+header ul li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+header ul li a:link,
+header ul li a:visited {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a:link,
+header ul li a:visited {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a:hover,
+header ul li a:active,
+header ul li a:focus {
+color: #BAD7FB;
+}
+header ul li a:link.active,
+header ul li a:visited.active {
+  color: #BAD7FB;
+}
+header ul li:first-child a:link,
+header ul li:first-child a:visited {
+    padding: 0;
+}
+h1,
+h2,
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 25px;
+}
+h4 {
+    padding: 10px 0;
+}
+li {
+  list-style-type: none; 
+  margin-bottom: 10px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  padding: 5px 0;
+  background-color: #3163a2;
+  color: white;
+  border-bottom: 1px solid white;
+}
+section h4:hover {
+cursor: pointer;
+color: #BAD7FB;
+}
+section.padding {
+  padding: 30px 0;
+}
+section.padding.header {
+  padding: 30px 0 10px 0;
+}
+
+.white {
+  background-color: white;
+  color: #3163a2;
+}
+.down {
+  text-align: center;
+  height: 0;
+}
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid white;
+}
+.down.small .triangle {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #3163a2;
+}
+.down.blue .triangle {border-top: 50px solid #3163a2;}
+
+.sub a:link,
+.sub a:visited {
+  color: white;
+}
+.sub a:hover,
+.sub a:active,
+.sub a:focus {
+color: #224571;
+}
+
+.text_container,
+.img_container {
+max-width: 400px;
+display: inline-block;
+vertical-align: middle;
+}
+.img_container {
+  overflow: hidden;
+  height:200px; 
+  margin-top: 20px;
+}
+.img_container img {
+height: 100%;
+width: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
