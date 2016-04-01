@@ -6,11 +6,11 @@
 html {
   min-height: 100%;
   background-color: #031021;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 body,
 a:link,
 a:visited {
-  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 28px;
   color: #186AD0;
@@ -99,7 +99,7 @@ h4,
 }
 .author {
   margin-left: 30px;
-  vertical-align:  text-bottom;
+  vertical-align:  bottom;
 }
 
 h1 {
@@ -132,11 +132,26 @@ li {
   display: inline-block;
   text-align: left;
 }
-.accordion .sub .container.rightalign, .rightalign {
+.rightalign {
 text-align: right;
-background-image: url('../images/demo.jpg');
+}
+.accordion .sub .container.rightalign {
     background-position: center;
     background-repeat: no-repeat;
+    text-align: right;
+    background-size: contain;
+}
+.accordion .sub .container.rightalign.raulveede {
+background-image: url('../images/raulveede.jpg');
+}
+.accordion .sub .container.rightalign.evalepik {
+background-image: url('../images/evalepik.jpg');
+}
+.accordion .sub .container.rightalign p{
+margin-top: 67px;
+}
+.accordion .sub .container.rightalign .box {
+min-height: 200px;
 }
 .smallbox {
     width: 49%;
@@ -164,6 +179,9 @@ border-bottom: none;
 }
 .row .blue {
   background-color: #061C38;
+}
+article {
+  background-color: #FFF9F6;
 }
 section.white {
   background-color: #FFF9F6;
@@ -370,12 +388,13 @@ nav {
     padding-top: 0;
 }
 .round.middle {
-          padding-top: 36px;
-    padding-bottom: 36px;
+          padding-top: 16px;
+    padding-bottom: 6px;
 }
 
 .round.middle:after {
       top: 0;
+      display: none;
 }
 .white .round.middle:after {
       background-color: #FFF9F6;
@@ -388,12 +407,18 @@ nav {
 .round.middle span {
       top: 0;
 }
+
 .box p {
     margin-top: 50px;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+.blue .box p {
+    margin-top: 14px;
 }
 .middle p {
      margin-top: 30px;
-    padding-bottom: 80px; 
+    padding-bottom: 10px; 
+        padding-bottom: 30px; 
+
 }
 }
