@@ -11,7 +11,7 @@ html {
 body,
 a:link,
 a:visited {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   color: #186AD0;
   text-decoration: none;
@@ -45,7 +45,7 @@ nav li a:active,
 nav li a:focus {
   color: #224571;
 }
-nav li.active a:link,nav li.active a:visited{
+nav li.active a:link,nav li.active a:visited {
   color: #224571;
 }
 .sr-only {
@@ -56,7 +56,6 @@ nav li.active a:link,nav li.active a:visited{
     height: 1px;
     margin: -1px;
     padding: 0;
-
     border: 0;
 }
 
@@ -147,7 +146,7 @@ background-image: url('../images/raulveede.jpg');
 .accordion .sub .container.rightalign.evalepik {
 background-image: url('../images/evalepik.jpg');
 }
-.accordion .sub .container.rightalign p{
+.accordion .sub .container.rightalign p {
 margin-top: 67px;
 }
 .accordion .sub .container.rightalign .box {
@@ -164,7 +163,7 @@ min-height: 200px;
     background-color: #061C38;
         border-bottom: 1px solid white;
   }
-.blue.accordion:last-child .centerbox.clickable{
+.blue.accordion:last-child .centerbox.clickable {
 border-bottom: none;
 }
 .header .container {
@@ -205,6 +204,13 @@ section.white {
   text-align: left;
     margin-top: 50px;
     margin-bottom: 67px;
+}
+.box.people p {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.accordion .sub .container.rightalign .box.people p.tags {
+    margin-top: 10px;
 }
 .accordion .sub .container.rightalign .box p {
   color: #186AD0;
@@ -294,16 +300,13 @@ text-align: center;
   text-align: left;
 }
 
-.sub a:link,
-.sub a:visited {
-  
-}
 .box  a:link,
 .box a:visited  {
   color: #186AD0;
   text-decoration: none;
-      display: block;
+  display: block;
 }
+
 .blue .box  a:link,
 .blue .box a:visited  {
   color: #FFF9F6;
@@ -321,6 +324,17 @@ a:focus .round span {
   color: #224571;
 }
 
+.accordion .box .tags a:link,
+.accordion .box .tags a:visited {
+  display: inline;
+  padding-right: 8px;
+  color: #186AD0;
+}
+.accordion .box .tags a:hover,
+.accordion .box .tags a:active,
+.accordion .box .tags a:focus {
+    color: #224571;
+}
 .text_container,
 .img_container {
   max-width: 400px;
@@ -340,7 +354,7 @@ a:focus .round span {
 footer {
   text-align: center;
   padding: 10px 0;
-  font-size: 12px;
+  font-size: 16px;
   background-color: #031021;
   color: #FFF9F6;
 }
@@ -358,14 +372,14 @@ footer .container {
 
 @media screen and (max-width: 1200px) {
 .accordion .sub .container {
-    padding: 30px 15px 55px 15px;
+    padding: 30px 15px 70px 15px;
 }
     #navbar-toggle {
         display: inline-block !important;
         margin: 0 30px 0 0;
         vertical-align: top;
         float: right;
-    }
+  }
 nav {
     float: none;
     display: block;
@@ -376,13 +390,16 @@ nav {
         display: block;
     }
     section.padding.header {
-    padding: 20px 0 23px 0;
+    padding: 20px 0 45px 0;
   }
 .box {
       width: 90%;
     display: block;
     margin: 0 auto;
     min-height: 0;
+  }
+  .box.smallbox {
+        min-height: 54px;
   }
 .row.blue {
     padding-top: 0;
@@ -421,4 +438,18 @@ nav {
         padding-bottom: 30px; 
 
 }
+  .smallbox {
+    width: 100%;
+    text-align: center;
+}
+}
+@media screen and (max-width: 990px) {
+  footer span {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  footer span {
+    width: 100%;
+  }
 }
